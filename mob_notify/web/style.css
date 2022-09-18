@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.center-announce {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: #000b29f6;
+}
+
+.center-announce span {
+    color: #0042ff;
+}
+
+.center-announce p {
+    margin-top: 8px;
+    font-size: 35px;
+}
+/* ============================================================= */
+/* ======================= Floating Text ======================= */
+/* ============================================================= */
+.floating-text {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    padding: 20px;
+    max-width: auto;
+    color: white;
+    text-align: center;
+    background-color: #000b29f6;
+    border-radius: 8px;
+}
+
+.floating-text span {
+    color: #0042ff;
+}
+
+.floating-text p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.circle {
+    margin:0 auto;
+    display:inline-block;
+    border-radius: 100%;
+    padding: 10px 16px;
+    background-color: #0044ff;
+}
+
+/* ============================================================= */
+/* ======================== Notification ======================= */
+/* ============================================================= */
+.notification-container {
+	position:absolute;
+	top:10vh;
+	left:0;
+	width:auto;
+	height:auto;
+	max-height:50vh;
+}
+
+.notification {
+    margin-top:10px;
+    margin-left: 10px;
+    display:block;
+    justify-content:center;
+    align-items:center;
+    padding:1vh;
+    background: #000b29;
+    border-radius: 8px;
+    color:#fff;
+    font-size:16px;
+    font-weight:100;
+    width:auto;
+    transform:translateX(-110%);
+    transition: .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+ 
+.pop {
+  transform:none;
+}
+
+.notification span {
+    margin-left:10px;
+    margin-right: 10px;
+}
+.notify-circle { 
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #0042ff;
+}
+
+/* ============================================================= */
+/* ======================== Alert System ======================= */
+/* ============================================================= */
+.alert-container {
+	position:absolute;
+	top:20vh;
+	right:10px;
+	width:auto;
+	height:auto;
+	max-height:50vh;
+    overflow: hidden;
+}
+
+.alert {
+    margin-top:10px;
+    margin-left: 10px;
+    display:block;
+    justify-content:center;
+    align-items:center;
+    padding:1vh;
+    background: #000b29;
+    border-radius: 8px;
+    color:#fff;
+    font-size:16px;
+    font-weight:100;
+    width:auto;
+    transform:translateX(110%);
+    transition: .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.apop {
+    transform:none;
+}
+
+.alert span {
+    margin-left:10px;
+    margin-right: 10px;
+}
+  
+.border-success {
+    border-left: solid 7px #00b11d;
+}
+
+.alert-circle-success { 
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #00b11d;
+}
+  
+.border-error {
+    border-left: solid 7px #db0000;
+}
+
+.alert-circle-error { 
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #db0000;
+}
+
+.border-warning {
+    border-left: solid 7px #dab200;
+}
+
+.alert-circle-warning { 
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #dab200;
+}
+
+/* ============================================================= */
+/* ======================== Progress Bar ======================= */
+/* ============================================================= */
+.progress-bar {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: auto;
+    min-width: 300px;
+    min-height: 30px;
+    height: auto;
+    font-size: 18px;
+    padding: 15px;
+    max-width: auto;
+    color: white;
+    text-align: center;
+    background-color: rgba(8, 16, 29, 0.84);
+}
+
+.progress-bar span {
+    z-index: 999;
+}
+
+.load {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    min-height: 30px;
+    height: 100%;
+    background-color: #5466ddb7;
+}
+
+.progress-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    font-size: 18px;
+    top:-55px;
+    left:0;
+    transform: translateX(-50%);
+    background-color: #5466DD;
+}
+
+.polygon {
+    position: absolute;
+    display: block;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    left:10px;
+}
+
+.percent-txt {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
