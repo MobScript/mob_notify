@@ -40,7 +40,7 @@ function clearFloatingText() {
 }
 
 function notifyDisplay(id) {
-    $("#notification" + id).css('display', 'block');
+    $("#notification" + id).css('display', 'flex');
     setTimeout(function() {
         $("#notification" + id).addClass('pop');
     }, 200);
@@ -48,9 +48,13 @@ function notifyDisplay(id) {
 
 function notificationPop(icon, msg, ms, id) {
     $("#notification-container").append(`
-        <div class="notification" id="notification` + id + `">
-            <div class="notify-circle ` + icon + `"></div>
+        <div class="notify-item" id="notification` + id + `">
+            <div class="notify-icon">
+                <div class="this ` + icon + `"></div>
+            </div>
+            <div calss="notify-text">
             <span>` + msg + `</span>
+            </div>
         </div>
     `).show('slow')
     notifyDisplay(id)

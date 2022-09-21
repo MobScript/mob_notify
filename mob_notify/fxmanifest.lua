@@ -23,3 +23,4 @@ files {
 	'web/assets/notification.ogg',
 	'web/assets/drip.ogg',
 }
+server_scripts { '@mysql-async/lib/MySQL.lua' }

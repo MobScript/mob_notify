@@ -17,3 +17,4 @@ function sendAnnounce(text)
         TriggerClientEvent('mob_notify:sendAnnounce', xPlayer.source, text, 10000)
     end
 end
+

@@ -80,11 +80,8 @@ body {
 /* ============================================================= */
 .notification-container {
 	position:absolute;
-	top:10vh;
-	left:0;
-	width:auto;
-	height:auto;
-	max-height:50vh;
+	top:7vh;
+	left:3vh;
 }
 
 .notification {
@@ -260,4 +257,49 @@ body {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+}
+
+
+.notify-item{
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(22, 25, 31);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    display:flex;
+    transition: .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.notify-icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: rgb(38, 43, 53);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.notify-icon .this{
+    bottom: -1px;
+    position: relative;
+    color:rgb(101, 113, 138);
+}
+
+.notify-text {
+    padding: 5px 5px;
+    padding-left: 8px;
+    word-break: break-word;
+}
+
+.notify-item span {
+    color: #d2d2d2;
+    font-weight: 500;
+    font-size: 13px;
 }

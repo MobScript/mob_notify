@@ -71,6 +71,12 @@ RegisterCommand('sound', function()
 	end
 end)
 
+
+RegisterCommand("M1", function()
+	sendNotification('fas fa-check', 'The car was bought successfully!', 4000)
+end)
+
+
 RegisterCommand('notify', function()
 	sendNotification('fa-solid fa-user-large', 'Lore ipsume napusis mi se kure!', 5000)
 	Wait(2000)
