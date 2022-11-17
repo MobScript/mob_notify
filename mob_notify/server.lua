@@ -4,9 +4,9 @@ RegisterCommand('announce', function(source, args)
     if user.getGroup() == 'admin' or 'superadmin' then
         sendAnnounce(table.concat(args, ' '))
     elseif user.getGroup() == 'mod' then
-        TriggerClientEvent('mob_notify:sendNotification', source, 'fa-solid fa-lock', 'You cannot use this command as a moderator, only admins and superadmins are allowed', 4000)
+        TriggerClientEvent('mob_notify:sendNotification', source, 'fa-solid fa-lock', 'No puede usar este comando como moderador, solo se permiten administradores y superadministradores', 4000)
     else 
-        TriggerClientEvent('mob_notify:sendNotification', source, 'fa-solid fa-lock', 'You dont have permission for that command!', 4000)
+        TriggerClientEvent('mob_notify:sendNotification', source, 'fa-solid fa-lock', 'No tienes permiso para ese comando!', 4000)
     end
 end)
 
